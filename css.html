@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 学习总结</title>
+</head>
+<body>
+<h2>定位</h2>
+<ol>
+    <li>position:relative; 相对于原本应该在的位置,文档流所占空间保留</li>
+    <li>
+        <div>
+            <ol>
+                <li>position:absolute; 完全脱离文档流,包括原空间.相对于包含块定位.可通过z-index控制堆放次序.</li>
+                <li>z-index为正数,离用户更近. 为负数,离用户更远.</li>
+            </ol>
+        </div>
+    </li>
+    <li>
+        <div>
+            <ol>
+                <li>float:left/right; 完全脱离文档流,包括原空间. 向左/右浮动,直到碰到其他浮动元素的右/左边,或者包含框.可能被卡住.</li>
+                <li>clear:left/right/both; 清除元素的左侧/右侧不允许出现浮动元素,在该元素上外边距增加清除空间.</li>
+            </ol>
+        </div>
+    </li>
+</ol>
+</body>
+</html>
